@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=PT+Sans&family=Poppins:wght@200;400;600&display=swap");
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 36%, 70%);
+}
+.container {
+  width: 900px;
+  height: 500px;
+  display: flex;
+
+  border-radius: 3px;
+  box-shadow: 2px 2px 50px hsl(0, 36%, 70%);
+}
+.text-container {
+  width: 60%;
+  height: 100%;
+  background-color: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-div {
+  width: 350px;
+  height: 400px;
+}
+.text-div h3 {
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+.text-div h1 {
+  font-weight: 400;
+  letter-spacing: 7px;
+  line-height: 45px;
+}
+.text-div h1 span {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.808);
+}
+.text-div p {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.input-div {
+  position: relative;
+}
+.input-div input {
+  width: 300px;
+  height: 30px;
+  margin: 0;
+
+  border: 2px solid hsl(0, 36%, 70%);
+  border-radius: 15px;
+  padding-left: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  position: relative;
+}
+
+.input-div #submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 8px 30px;
+  border-radius: 15px;
+  font-size: 10px;
+
+  background-image: linear-gradient(to right, pink, hsl(0, 36%, 70%));
+}
+.input-div .error-icon {
+  display: none;
+  position: absolute;
+  top: 6px;
+
+  right: 30%;
+}
+.input-div .error-text,
+.input-div .success-text {
+  display: none;
+  margin: 5px 0 0 15px;
+
+  font-size: 11px;
+  color: red;
+  font-weight: 500;
+}
+.input-div .success-text {
+  color: green;
+}
+
+::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.img-container {
+  width: 40%;
+  height: 100%;
+}
+.mobile {
+  display: none;
+}
+.img-container .desktop-image {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+  .text-div {
+    width: 300px;
+    height: 400px;
+  }
+  .img-container {
+    width: 50%;
+  }
+  .text-div p {
+    font-size: 15px;
+  }
+  .input-div input {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    width: 500px;
+    height: 300px;
+  }
+  .text-div {
+    width: 250px;
+    height: 280px;
+  }
+  .text-div h1 {
+    font-size: 23px;
+    line-height: 26px;
+  }
+  .text-div h3 {
+    margin-bottom: 0;
+  }
+  .text-div h3 img {
+    width: 100px;
+  }
+  .input-div input {
+    width: 200px;
+    height: 25px;
+  }
+  .input-div #submit {
+    padding: 5px 25px;
+  }
+  .input-div .error-icon {
+    height: 18px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .img-container {
+    width: 100%;
+    height: 50%;
+  }
+  .img-container .desktop-image {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    position: relative;
+  }
+  .mobile-heading {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 120px;
+  }
+  .mobile-image {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+  }
+  .text-container {
+    width: 100%;
+    height: 50%;
+  }
+  .text-div {
+    text-align: center;
+    width: 90%;
+    height: 100%;
+  }
+  .text-div h3 {
+    display: none;
+  }
+  .text-div h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .text-div p {
+    margin-bottom: 8%;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  .input-div input {
+    width: 92%;
+  }
+  .input-div img {
+    border-radius: 40px;
+  }
+}
