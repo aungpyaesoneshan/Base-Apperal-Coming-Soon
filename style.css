@@ -3,7 +3,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(/images/bg-pattern-desktop.svg);
+  background-image: url("images/bg-pattern-desktop.svg");
   background-size: auto;
   display: flex;
   justify-content: center;
