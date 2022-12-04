@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Happycloud250/Base-Apperal-Coming-Soon]
-- Live Site URL: [https://happycloud250.github.io/Base-Apperal-Coming-Soon/]
+- Solution URL: [https://github.com/aungpyaesoneshan/Base-Apperal-Coming-Soon]
+- Live Site URL: [https://aungpyaesoneshan.github.io/Base-Apperal-Coming-Soon/]
 
 ## My process
 
